@@ -6,14 +6,14 @@ import user from './user'
 import songs from './songs'
 import cartReducer from './cart'
 import usersReducer from './admin'
-import single_song from './single_song'
+import singleSong from './singleSong'
 import orders from './orders'
 
 const reducer = combineReducers({
   user,
   cartReducer,
   songs,
-  single_song,
+  singleSong,
   usersReducer,
   orders
 })

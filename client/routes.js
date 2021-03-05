@@ -6,7 +6,7 @@ import {
   Login,
   Signup,
   Home,
-  Single_Song,
+  SingleSong,
   Songs,
   Cart,
   AdminUsers,
@@ -33,7 +33,7 @@ class Routes extends Component {
         <Route exact path="/home" component={Home} />
         <Route exact path="/songs" component={Songs} />
         {/* Routes placed here are available to all visitors */}
-        <Route path="/songs/:songId" component={Single_Song} />
+        <Route path="/songs/:songId" component={SingleSong} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/cart" component={Cart} />

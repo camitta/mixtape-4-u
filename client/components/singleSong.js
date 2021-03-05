@@ -1,13 +1,13 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {fetchSingleSong} from '../store/single_song'
+import {fetchSingleSong} from '../store/singleSong'
 import {addSongToCart, fetchCart} from '../store/cart'
 import {createNewOrder} from '../store/orders'
 import {Container, Row, Card, Col, Button} from 'react-bootstrap'
 import toast from 'toasted-notes'
 import 'toasted-notes/src/styles.css'
 
-class Single_Song extends React.Component {
+class SingleSong extends React.Component {
   constructor() {
     super()
     this.handleClick = this.handleClick.bind(this)
@@ -95,7 +95,7 @@ class Single_Song extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    song: state.single_song,
+    song: state.singleSong,
     cart: state.cartReducer
   }
 }
@@ -109,4 +109,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Single_Song)
+export default connect(mapStateToProps, mapDispatchToProps)(SingleSong)

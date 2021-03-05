@@ -24,7 +24,7 @@ export const fetchSingleSong = songId => {
 }
 
 //REDUCER
-export default function single_song(state = {}, action) {
+export default function singleSong(state = {}, action) {
   switch (action.type) {
     case SET_SONG:
       return action.song
